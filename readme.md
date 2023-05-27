@@ -1,0 +1,1 @@
+bash <(curl -s "https://raw.githubusercontent.com/ltrtuan/proxy/master/3proxy.sh")
