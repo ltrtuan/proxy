@@ -15,13 +15,15 @@ install_3proxy() {
     echo "installing 3proxy"
 	yum install gcc make git -y
     cd ~
-    git clone https://github.com/z3APA3A/3proxy.git   
-    cd 3proxy
-    make -f Makefile.Linux
-    mkdir -p /usr/local/etc/3proxy/{bin,logs,stat}
-    cp src /usr/local/etc/3proxy/bin/
-    cp scripts/init.d/proxy.sh /etc/init.d/3proxy
-    chmod +x /etc/init.d/3proxy
+	git clone https://github.com/z3apa3a/3proxy
+	cd 3proxy
+	ln -s Makefile.Linux Makefile
+	make
+	sudo make install   
+    # mkdir -p /usr/local/etc/3proxy/{bin,logs,stat}
+    # cp src /usr/local/etc/3proxy/bin/
+    # cp scripts/init.d/proxy.sh /etc/init.d/3proxy
+    # chmod +x /etc/init.d/3proxy
     chkconfig 3proxy on
     cd $WORKDIR
 }
@@ -105,7 +107,7 @@ gen_iptables >$WORKDIR/boot_iptables.sh
 gen_ifconfig >$WORKDIR/boot_ifconfig.sh
 chmod +x ${WORKDIR}/boot_*.sh /etc/rc.local
 
-gen_3proxy >/usr/local/etc/3proxy/3proxy.cfg
+gen_3proxy >/usr/local/3proxy/conf/3proxy.cfg
 
 cat >>/etc/rc.local <<EOF
 bash ${WORKDIR}/boot_iptables.sh
