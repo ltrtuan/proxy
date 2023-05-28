@@ -10,6 +10,17 @@ usrFBWBD/passymEgc/103.196.144.24/10008/:d774:da85:d8fb:500b
 usrkSrD4/pass1K3DD/103.196.144.24/10009/:bbe7:4b75:e46f:ab43
 usrFOweI/passpNsRm/103.196.144.24/10010/:346f:e169:5208:b2ce
 
+iptables -I INPUT -p tcp --dport 10000  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10001  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10002  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10003  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10004  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10005  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10006  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10007  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10008  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10009  -m state --state NEW -j ACCEPT
+iptables -I INPUT -p tcp --dport 10010  -m state --state NEW -j ACCEPT
 
 
 ifconfig eth0 inet6 add :1276:c195:41bb:1ecc/64
