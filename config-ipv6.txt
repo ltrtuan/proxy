@@ -1,0 +1,25 @@
+usrf4whj/pass52JCN/103.196.144.24/10000/:1276:c195:41bb:1ecc
+usr4badl/passEXxni/103.196.144.24/10001/:fdaf:863a:a59b:4c48
+usr8XzDk/passYa7GM/103.196.144.24/10002/:7f13:4359:7d4a:1a89
+usrlFnNy/passTiEA7/103.196.144.24/10003/:04ee:2ba0:9034:ea73
+usr51NWd/passFBciy/103.196.144.24/10004/:082a:4c5a:5862:f950
+usrskcOd/passzhxiY/103.196.144.24/10005/:b133:931b:b1b5:2d85
+usrDtEMs/passfFqUg/103.196.144.24/10006/:485e:c0d0:acf0:bad3
+usrx5pQj/pass1DgrV/103.196.144.24/10007/:0a17:43ba:60d8:1a29
+usrFBWBD/passymEgc/103.196.144.24/10008/:d774:da85:d8fb:500b
+usrkSrD4/pass1K3DD/103.196.144.24/10009/:bbe7:4b75:e46f:ab43
+usrFOweI/passpNsRm/103.196.144.24/10010/:346f:e169:5208:b2ce
+
+
+
+ifconfig eth0 inet6 add :1276:c195:41bb:1ecc/64
+ifconfig eth0 inet6 add :fdaf:863a:a59b:4c48/64
+ifconfig eth0 inet6 add :7f13:4359:7d4a:1a89/64
+ifconfig eth0 inet6 add :04ee:2ba0:9034:ea73/64
+ifconfig eth0 inet6 add :082a:4c5a:5862:f950/64
+ifconfig eth0 inet6 add :b133:931b:b1b5:2d85/64
+ifconfig eth0 inet6 add :485e:c0d0:acf0:bad3/64
+ifconfig eth0 inet6 add :0a17:43ba:60d8:1a29/64
+ifconfig eth0 inet6 add :d774:da85:d8fb:500b/64
+ifconfig eth0 inet6 add :bbe7:4b75:e46f:ab43/64
+ifconfig eth0 inet6 add :346f:e169:5208:b2ce/64
